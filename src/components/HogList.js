@@ -16,9 +16,9 @@ export default class HogList extends Component {
                   <div className="content">
                     <a className="header">{hog.name}</a>
                     <div className="meta">
-                      <span className="specialty">Specialty: {hog['specialty']}</span>
-                      <span className="isGreased">Greased? {hog['greased']}</span>
-                      <span className="medal">Highest Medal: {hog['highest medal achieved']}</span>
+                      <div className="specialty">Specialty: {hog['specialty']} </div>
+                      <div className="isGreased">{hog['greased'] ? 'Greased' : 'Not Greased'} </div>
+                      <div className="medal">Highest Medal: {hog['highest medal achieved']} </div>
                     </div>
                     <div className="description">
                       {hog.name} is an art director living in New York.
