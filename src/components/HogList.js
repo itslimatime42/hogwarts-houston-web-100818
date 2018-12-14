@@ -9,7 +9,7 @@ export default class HogList extends Component {
           {this.props.hogs.map(hog => {
             return (
               <div className="ui eight wide column">
-                <div className="ui card">
+                <div className="pigTile">
                   <div className="image">
                     <img src={hog.image}/>
                   </div>
@@ -21,13 +21,13 @@ export default class HogList extends Component {
                       <span className="medal">Highest Medal: {hog['highest medal achieved']}</span>
                     </div>
                     <div className="description">
-                      Kristy is an art director living in New York.
+                      {hog.name} is an art director living in New York.
                     </div>
                   </div>
                   <div className="extra content">
                     <a>
                       <i className="user icon"></i>
-                      22 Friends
+                      {hog.name} has 22 Friends
                     </a>
                   </div>
                 </div>
