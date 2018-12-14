@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import '../App.css';
 import Nav from './Nav'
-import HogListContainer from '../containers/HogListContainer'
+import HogGridContainer from '../containers/HogGridContainer'
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-          < Nav />
-          < HogListContainer />
+          <Nav />
+          <HogGridContainer />
       </div>
     )
   }
