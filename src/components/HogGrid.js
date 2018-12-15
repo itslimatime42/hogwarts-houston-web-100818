@@ -8,7 +8,7 @@ const HogGrid = (props) => {
       {props.hogs.map(hog => {
         return (
           <div key={hog.id} className="ui eight wide column">
-            <Hog hog={hog} />
+            <Hog hog={hog} hide={props.hide} />
           </div>
         )
       })}
